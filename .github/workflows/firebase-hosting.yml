@@ -16,13 +16,16 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'  # Updated to use Node.js 20
+        node-version: '20'  # Use Node.js 20 as discussed
 
     - name: Install dependencies
       run: npm install
 
     - name: Build Docusaurus website
       run: npm run build
+
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools  # Install Firebase CLI globally
 
     - name: Deploy to Firebase Hosting
       run: firebase deploy --only hosting
