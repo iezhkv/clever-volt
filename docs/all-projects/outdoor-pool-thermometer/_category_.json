@@ -1,0 +1,8 @@
+{
+  "label": "Външен Басейн",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "ESP32 следи температурите на двата външни басейна"
+  }
+}
