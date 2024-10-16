@@ -8,28 +8,23 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Clever Volt Docs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://github.com',
+  url: 'https://docs.clever-volt.com',  // Your Firebase Hosting custom domain
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/clever-volt/',
+  // For Firebase Hosting, baseUrl is usually '/'
+  baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'iezhkv', // Usually your GitHub org/user name.
-  projectName: 'clever-volt', // Usually your repo name.
-  deploymentBranch: 'gh-pages',
+  // Firebase Hosting deployment config.
+  organizationName: 'clever-volt',  // Optional: Your GitHub org/user name (if you use edit links)
+  projectName: 'clever-volt-docs',  // Optional: Your GitHub repo name (if you use edit links)
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',  // Change to 'warn' for forgiving builds
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -42,10 +37,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Edit URL for GitHub repository (optional, if using GitHub for source control)
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/clever-volt/clever-volt-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -53,11 +47,9 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          // Edit URL for GitHub repository (optional, if using GitHub for source control)
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
+            'https://github.com/clever-volt/clever-volt-docs/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -75,9 +67,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Clever',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Clever Volt Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -85,13 +77,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            label: 'Docs',
           },
         ],
       },
@@ -133,12 +119,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/clever-volt/clever-volt-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Clever Volt, Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
