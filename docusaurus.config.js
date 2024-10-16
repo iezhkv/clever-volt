@@ -26,6 +26,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  
 
   presets: [
     [
@@ -66,6 +67,16 @@ const config = {
           },
         ],
       },
+      colorMode: {
+        defaultMode: 'dark', // Choose between 'light', 'dark', or 'auto'
+        disableSwitch: false, // Optionally disable the theme switcher
+      },
+      stylesheets: [
+        {
+          href: '/css/custom.css', // Add your own custom CSS
+          type: 'text/css',
+        },
+      ],
       footer: {
         style: 'dark',
         links: [
