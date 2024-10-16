@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: ESPHome configuration
+title: "ESPHome configuration 🛠️"
 ---
 
 ```yaml title="configuration.yaml"
