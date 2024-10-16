@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -12,17 +12,15 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://docs.clever-volt.com',  // Your Firebase Hosting custom domain
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For Firebase Hosting, baseUrl is usually '/'
+  // Set the production URL of your site here
+  url: 'https://docs.clever-volt.com', // Your Firebase Hosting custom domain
   baseUrl: '/',
 
-  // Firebase Hosting deployment config.
-  organizationName: 'iezhkv',  // Optional: Your GitHub org/user name (if you use edit links)
-  projectName: 'clever-volt',  // Optional: Your GitHub repo name (if you use edit links)
+  // Deployment config
+  organizationName: 'iezhkv', // Your GitHub username or organization name
+  projectName: 'clever-volt', // Your GitHub repository name
 
-  onBrokenLinks: 'warn',  // Change to 'warn' for forgiving builds
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -37,9 +35,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Edit URL for GitHub repository (optional, if using GitHub for source control)
-          // editUrl:
-          //   'https://github.com/iezhkv/clever-volt-docs/tree/main/',
+          // Edit URL for GitHub repository (for "Edit this page" link)
+          editUrl: 'https://github.com/iezhkv/clever-volt/edit/main/',
         },
         blog: {
           showReadingTime: true,
@@ -47,12 +44,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Edit URL for GitHub repository (optional, if using GitHub for source control)
-          // editUrl:
-          //   'https://github.com/iezhkv/clever-volt-docs/tree/main/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
+          // Edit URL for GitHub repository (for "Edit this page" in blog posts)
+          editUrl: 'https://github.com/iezhkv/clever-volt/edit/main/blog/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -64,10 +57,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Clever',
+        title: 'Clever Volt',
         logo: {
           alt: 'Clever Volt Logo',
           src: 'img/logo.svg',
@@ -119,7 +111,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/clever-volt/clever-volt-docs',
+                href: 'https://github.com/iezhkv/clever-volt',
               },
             ],
           },
