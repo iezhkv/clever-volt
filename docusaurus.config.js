@@ -19,7 +19,7 @@ const config = {
   baseUrl: '/',
 
   // Firebase Hosting deployment config.
-  organizationName: 'clever-volt',  // Optional: Your GitHub org/user name (if you use edit links)
+  organizationName: 'iezhkv',  // Optional: Your GitHub org/user name (if you use edit links)
   projectName: 'clever-volt-docs',  // Optional: Your GitHub repo name (if you use edit links)
 
   onBrokenLinks: 'warn',  // Change to 'warn' for forgiving builds
@@ -39,7 +39,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Edit URL for GitHub repository (optional, if using GitHub for source control)
           editUrl:
-            'https://github.com/clever-volt/clever-volt-docs/tree/main/',
+            'https://github.com/iezhkv/clever-volt-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -49,7 +49,7 @@ const config = {
           },
           // Edit URL for GitHub repository (optional, if using GitHub for source control)
           editUrl:
-            'https://github.com/clever-volt/clever-volt-docs/tree/main/',
+            'https://github.com/iezhkv/clever-volt-docs/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
