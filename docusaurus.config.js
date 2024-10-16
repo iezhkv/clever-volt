@@ -9,7 +9,6 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Clever Volt Docs',
-  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production URL of your site here
@@ -38,18 +37,7 @@ const config = {
           // Edit URL for GitHub repository (for "Edit this page" link)
           editUrl: 'https://github.com/iezhkv/clever-volt/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Edit URL for GitHub repository (for "Edit this page" in blog posts)
-          editUrl: 'https://github.com/iezhkv/clever-volt/edit/main/blog/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
+        
       }),
     ],
   ],
@@ -71,50 +59,52 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
+          {
+            to: '/perfect-home',  // Link to markdown.md (assuming it's in the docs folder)
+            label: 'Perfect Home ?',  // The text displayed in the navbar
+            position: 'left',  // Position in the navbar (left, right, etc.)
+          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
+          // {
+          //   title: 'Docs',
+          //   items: [
+          //     {
+          //       label: 'Tutorial',
+          //       to: '/docs/intro',
+          //     },
+          //   ],
+          // },
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+            // title: 'Community',
+            // items: [
+            //   {
+            //     label: 'Stack Overflow',
+            //     href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+            //   },
+            //   {
+            //     label: 'Discord',
+            //     href: 'https://discordapp.com/invite/docusaurus',
+            //   },
+            //   {
+            //     label: 'Twitter',
+            //     href: 'https://twitter.com/docusaurus',
+            //   },
+            // ],
           },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/iezhkv/clever-volt',
-              },
-            ],
-          },
+          // {
+          //   title: 'More',
+          //   items: [
+              
+          //     {
+          //       label: 'GitHub',
+          //       href: 'https://github.com/iezhkv/clever-volt',
+          //     },
+          //   ],
+          // },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Clever Volt, Built with Docusaurus.`,
       },
