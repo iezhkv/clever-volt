@@ -191,7 +191,7 @@ The **Slave Node** is responsible for the following:
 
 1. **Sensing the Temperature:** The slave uses an SHT3x-D sensor to read the temperature in real-time.
 
-2. **Displaying the Temperature:** The current temperature is shown on a TM1637 display 📟.
+2. **Displaying the Target Temperature:** The target temperature is shown on a TM1637 display 📟.
 
 3. **Thermostat Control:** The slave has two GPIO buttons that allow the user to increase or decrease the thermostat set temperature, which is then sent to the master.
 
@@ -285,12 +285,12 @@ modbus_server:
       number: 1
       on_write: |-
         ESP_LOGI("ON_WRITE", "Write to address 0x9001, value=%d", value);
-        auto call = id(number_value).make_call();
+        auto call = id(target_temperature).make_call();
         call.set_value(value);
         call.perform();
         return value;
       on_read: |-
-        int current_value = id(number_value).state;
+        int current_value = id(target_temperature).state;
         ESP_LOGI("ON_READ", "Read from address 0x9001, value=%d", current_value);
         return current_value;
 
@@ -303,7 +303,7 @@ modbus_server:
 
 number:
   - platform: template
-    id: number_value
+    id: target_temperature
     name: "Number Value"
     optimistic: true
     min_value: 15
@@ -323,8 +323,8 @@ display:
     inverted: true
     length: 4
     lambda: |-
-      // Display the number value on the TM1637 display
-      it.printf(0, "%.0f", id(number_value).state);
+      // Display the target temperature on the TM1637 display
+      it.printf(0, "%.0f", id(target_temperature).state);
 
 
 
@@ -338,10 +338,10 @@ binary_sensor:
     on_press:
       then:
         - lambda: |-
-            int current_value = id(number_value).state;
+            int current_value = id(target_temperature).state;
             if (current_value < 30) {
               current_value += 1;
-              id(number_value).publish_state(current_value);
+              id(target_temperature).publish_state(current_value);
             }
 
   - platform: gpio
@@ -353,10 +353,10 @@ binary_sensor:
     on_press:
       then:
         - lambda: |-
-            int current_value = id(number_value).state;
+            int current_value = id(target_temperature).state;
             if (current_value > 15) {
               current_value -= 1;
-              id(number_value).publish_state(current_value);
+              id(target_temperature).publish_state(current_value);
             }
 
 ```
