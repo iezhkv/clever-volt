@@ -38,8 +38,8 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           // Edit URL for GitHub repository (optional, if using GitHub for source control)
-          editUrl:
-            'https://github.com/iezhkv/clever-volt-docs/tree/main/',
+          // editUrl:
+          //   'https://github.com/iezhkv/clever-volt-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -48,8 +48,8 @@ const config = {
             xslt: true,
           },
           // Edit URL for GitHub repository (optional, if using GitHub for source control)
-          editUrl:
-            'https://github.com/iezhkv/clever-volt-docs/tree/main/',
+          // editUrl:
+          //   'https://github.com/iezhkv/clever-volt-docs/tree/main/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
