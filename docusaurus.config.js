@@ -20,7 +20,7 @@ const config = {
 
   // Firebase Hosting deployment config.
   organizationName: 'iezhkv',  // Optional: Your GitHub org/user name (if you use edit links)
-  projectName: 'clever-volt-docs',  // Optional: Your GitHub repo name (if you use edit links)
+  projectName: 'clever-volt',  // Optional: Your GitHub repo name (if you use edit links)
 
   onBrokenLinks: 'warn',  // Change to 'warn' for forgiving builds
   onBrokenMarkdownLinks: 'warn',
