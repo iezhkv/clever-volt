@@ -366,7 +366,7 @@ binary_sensor:
 ```
 
 
-### Wiring Instructions
+## Wiring Instructions
 
 To connect the components in this project, follow the wiring instructions below:
 
