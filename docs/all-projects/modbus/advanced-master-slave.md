@@ -13,7 +13,7 @@ You can find the library here: [esphome-modbus-server](https://github.com/epicla
 
 :::
 
-## Required Components: 📦
+### Required Components: 📦
 
 - 2 ESP32 boards (e.g., ESP32-POE)
 - 1 SHT3x-D temperature and humidity sensor 🌡️
