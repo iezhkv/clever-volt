@@ -2,7 +2,7 @@
 
 title: "Advanced Master Slave 🚀"
 sidebar_position: 2
-toc_max_heading_level: 4
+
 
 ---
 
@@ -16,7 +16,7 @@ You can find the library here: [esphome-modbus-server](https://github.com/epicla
 
 :::
 
-### Required Components: 📦
+## Required Components: 📦
 
 - 2 ESP32 boards (e.g., ESP32-POE)
 - 1 SHT3x-D temperature and humidity sensor 🌡️
@@ -25,7 +25,7 @@ You can find the library here: [esphome-modbus-server](https://github.com/epicla
 - 3 Push buttons 🕹️
 
 
-### Master Node Functionality
+## Master Node Functionality
 
 The **Master Node** is responsible for the following:
 
@@ -37,7 +37,7 @@ The **Master Node** is responsible for the following:
 
 5. **Modbus Communication:** The master node handles all Modbus transactions with the slave, fetching temperature data and controlling thermostat settings.
 
-#### Master Node YAML Configuration:
+### Master Node YAML Configuration:
 ```yaml title="master_node.yaml" showLineNumbers
 esphome:
   name: esp-poe-prototype-2
@@ -189,7 +189,7 @@ script:
           call.perform();
 ```
 
-### Slave Node Functionality
+## Slave Node Functionality
 
 The **Slave Node** is responsible for the following:
 
@@ -201,7 +201,7 @@ The **Slave Node** is responsible for the following:
 
 4. **Modbus Communication:** The slave node communicates with the master node using Modbus over RS485, sending temperature data and thermostat settings.
 
-#### Slave Node YAML Configuration:
+### Slave Node YAML Configuration:
 
 ```yaml title="slave_node.yaml" showLineNumbers
 esphome:
