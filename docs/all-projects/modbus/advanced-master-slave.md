@@ -1,6 +1,9 @@
 ---
+
 title: "Advanced Master Slave 🚀"
 sidebar_position: 2
+toc_max_heading_level: 4
+
 ---
 
 This project demonstrates how two ESP32 devices communicate using the Modbus protocol, where one is a Master node, and the other is a Slave node. The Master controls a climate system (heating/cooling) based on the temperature data provided by the Slave. Additionally, the Slave displays the temperature on a screen and allows user interaction through buttons to modulate the thermostat.
