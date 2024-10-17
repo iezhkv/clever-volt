@@ -19,6 +19,7 @@ You can find the library here: [esphome-modbus-server](https://github.com/epicla
 - 1 SHT3x-D temperature and humidity sensor 🌡️
 - 1 TM1637 display 📟
 - 2 TTL to RS485 modules 🔌
+- 3 Push buttons 🕹️
 
 
 ### Master Node Functionality
