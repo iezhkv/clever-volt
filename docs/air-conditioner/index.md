@@ -50,5 +50,8 @@ title: "Климатици"
 - Цена от офертата **`60лв без ДДС`**
 - Средна цена в нета **`35лв с ДДС`**
 
+## Оферта от [vimax.bg](https://vimax.bg/kanalen-klimatik-gree-gud35p-gud35wnhat-12-000-btu.html)
+
+![Image](./img/offer.png "Image")
 
 
