@@ -15,3 +15,6 @@ sidebar_position: 3
 
 
 ![Image](./img/pipe_connections.svg "Image")
+
+<a href="./img/pipe.pdf" download>Свали схемата като PDF</a>
+
