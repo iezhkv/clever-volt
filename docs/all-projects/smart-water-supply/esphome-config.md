@@ -1,6 +1,6 @@
 ---
-sidebar_position: 5
-title: Програмиране
+sidebar_position: 4
+title: 💻 Програмиране 
 ---
 
 

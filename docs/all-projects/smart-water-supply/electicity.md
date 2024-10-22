@@ -1,6 +1,6 @@
 ---
-title: "Електрическа схема "
-sidebar_position: 4
+title: ⚡ Електрическа схема
+sidebar_position: 3
 ---
 
 :::note Недовършена
