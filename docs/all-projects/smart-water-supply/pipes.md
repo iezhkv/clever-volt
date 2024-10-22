@@ -14,9 +14,9 @@ sidebar_position: 3
 4. **Тръбни връзки** – Използвайте PVC тръби според обозначените диаметри на схемата за връзка между резервоара, хидрофора и сградата.
 
 
-![Image](./img/pipe_connections.svg "Image")
+![Image](./img/pipes2.svg "Image")
 
-[Виж като PDF](./img/pipes.pdf)
+[Виж като PDF](./img/pipes2.pdf)
 
 
 
