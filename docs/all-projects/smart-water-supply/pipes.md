@@ -16,7 +16,7 @@ sidebar_position: 2
 
 ![Image](./img/pipes2.svg "Image")
 
-### [📝 Виж като PDF](./img/pipes2.pdf)
+**[📝 Виж като PDF](./img/pipes2.pdf)**
 
 
 
